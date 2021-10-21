@@ -1,0 +1,21 @@
+﻿.CenterItems{
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+}
+.ForAllImage {
+    margin-top:10px;
+    width: 71%;
+    height: 23rem;
+    z-index: 33;
+}
+@media(max-width:680px) {
+    .ForAllImage {
+        width: 100vw;
+    }
+}
+@media(min-width:1100px) {
+    .CenterItems {
+        display: flex !important;
+    }
+}

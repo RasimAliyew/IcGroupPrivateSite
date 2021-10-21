@@ -1,0 +1,48 @@
+﻿<link href="/css/SliderStyle.css" rel="stylesheet" />
+<div class="swiper">
+    <div  class="swiper-wrapper">
+        <div  class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./MyImage/1138975.jpg" alt="Alternate Text" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./MyImage/5886727800_1_1_1.webp" alt="Alternate Text" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.teahub.io/photos/full/115-1153995_landscape-1080-x-1920.jpg"alt="Alternate Text" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://thumbs.dreamstime.com/z/back-behind-view-photo-dark-skin-programmer-lady-look-big-monitor-check-id-address-work-overtime-check-debugging-back-behind-177727883.jpg" alt="Alternate Text" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 300,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+           
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+         
+        },
+    });
+ 
+</script>

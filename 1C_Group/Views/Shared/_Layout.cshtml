@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _1C_Group</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./css/CenterItemsStyle.css" rel="stylesheet" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        #particles-js {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            
+        }
+    </style>
+</head>
+<body>
+    @*<div id="particles-js"></div>*@
+        <div class="LeftPage" >
+            <partial name="~/Views/Home/Partials/PartialNavBarVertical.cshtml" />
+        </div>
+        <partial name="~/Views/Home/Partials/PartialNavBar.cshtml" />
+
+
+
+
+
+        <center class="CenterItems">
+            <partial name="~/Views/Home/Partials/PartialSlider.cshtml" />
+            <img src="./MyImage/1cFirstImage.png" alt="Alternate Text" class="ForAllImage container" />
+            <img src="./MyImage/1СSecondIamge.png" alt="Alternate Text" class="ForAllImage container" />
+            <img src="./MyImage/1cThirdImage.png" alt="Alternate Text" class="ForAllImage container" />
+        </center>
+    
+
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+        </footer>
+    
+ 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/particles.js"></script>
+    <script src="~/js/app.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

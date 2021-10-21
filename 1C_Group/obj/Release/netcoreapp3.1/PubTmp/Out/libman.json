@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "typeboost.css@0.1.11",
+      "destination": "wwwroot/typeboost.css/"
+    }
+  ]
+}

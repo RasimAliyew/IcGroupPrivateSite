@@ -1,0 +1,25 @@
+﻿button{
+    width:99%;
+    margin:2px;
+    border:none;
+}
+.dropdown-item{
+    width:24rem;
+    align-content:start;
+    justify-content:start;
+}
+
+.MyNavlink {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(239 239 239);
+}
+@media(min-width:1100px)
+{
+    .LeftPage {
+        display: none !important;
+        background-color: red;
+    }
+
+}
